@@ -9,31 +9,20 @@ for (const person of people) {
     }
 }
 
-console.log("Обчислюємо середнє ASCII-кодів літер.\n");
-console.log("Якщо середнє < 60 — (hello), інакше —  (goodBye).\n");
+console.log("\nОбчислюємо середнє ASCII-кодів літер.\n");
+console.log("Якщо середнє < 90 — (hello), інакше — (goodBye).\n");
 
-function asciiValues(name) {
-    return [...name].map(ch => ch.charCodeAt(0));
+function asciiAverage(name) {
+    const total = [...name].reduce((sum, ch) => sum + ch.charCodeAt(0), 0);
+    return total / name.length;
 }
 
-function mean(arr) {
-    return arr.reduce((sum, val) => sum + val, 0) / arr.length;
-}
+for (const name of people) {
+    const avg = asciiAverage(name).toFixed(2);
+    console.log(`${name}: середнє ASCII = ${avg}`);
 
-function variance(arr) {
-    const m = mean(arr);
-    return arr.reduce((sum, val) => sum + (val - m) ** 2, 0) / arr.length;
-}
-
-for (const name of names) {
-    const values = asciiValues(name);
-    const avg = mean(values).toFixed(2);
-    const varVal = variance(values).toFixed(2);
-
-    console.log(`${name}: середнє = ${avg}, дисперсія = ${varVal}`);
-
-    if (varVal < 60) {
-        hello(`${name}  ✅`);
+    if (avg < 90) {
+        hello(`${name} ✅`);
     } else {
         goodBye(`${name} ⚡`);
     }
