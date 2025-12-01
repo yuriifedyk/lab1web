@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра: Злови Піксель</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        
+        <section id="menu-view" class="active">
+            <header>
+                <h1>Pixel Hunter</h1>
+            </header>
+            
+            <form class="game-settings" onsubmit="event.preventDefault()">
+                <div class="form-group">
+                    <label for="lvl-select">Рівень складності:</label>
+                    <select id="lvl-select">
+                        <option value="easy">Легкий</option>
+                        <option value="medium" selected>Середній</option>
+                        <option value="hard">Важкий</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="theme-select">Колір цілі:</label>
+                    <select id="theme-select">
+                        <option value="" disabled selected>Оберіть колір...</option>
+                        <option value="green">Зелений</option>
+                        <option value="red">Червоний</option>
+                        <option value="blue">Синій</option>
+                    </select>
+                </div>
+
+                <button type="button" id="btn-play" class="primary-btn">Почати гру</button>
+            </form>
+        </section>
+
+        <section id="play-view" class="hidden">
+            <div class="status-bar">
+                <div class="stat-item">
+                    Бали: <span id="current-score">0</span>
+                </div>
+                <div class="stat-item">
+                    Таймер: <span id="time-remaining">2.0</span>с
+                </div>
+            </div>
+            
+            <div id="playground">
+                <div class="game-target" id="active-target"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>
