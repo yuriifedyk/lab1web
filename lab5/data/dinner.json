@@ -1,0 +1,36 @@
+{
+  "category": {
+    "name": "Основне меню",
+    "notes": "Страви від шефа"
+  },
+  "items": [
+    {
+      "id": 201,
+      "name": "Лосось гриль",
+      "shortname": "salmon",
+      "description": "Свіжий лосось на вуглях.",
+      "price": "350 грн"
+    },
+    {
+      "id": 202,
+      "name": "Рібай стейк",
+      "shortname": "ribeye",
+      "description": "Преміальна яловичина.",
+      "price": "450 грн"
+    },
+    {
+      "id": 203,
+      "name": "Качка по-пекінськи",
+      "shortname": "duck",
+      "description": "Традиційний рецепт.",
+      "price": "300 грн"
+    },
+    {
+      "id": 204,
+      "name": "Різотто з грибами",
+      "shortname": "risotto",
+      "description": "Лісові гриби та пармезан.",
+      "price": "220 грн"
+    }
+  ]
+}

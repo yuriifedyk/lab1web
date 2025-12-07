@@ -1,0 +1,36 @@
+{
+  "category": {
+    "name": "Напої",
+    "notes": "Освіжаючі та зігріваючі"
+  },
+  "items": [
+    {
+      "id": 301,
+      "name": "Лимонад",
+      "shortname": "lemonade",
+      "description": "Домашній лимонад з м'ятою.",
+      "price": "60 грн"
+    },
+    {
+      "id": 302,
+      "name": "Еспресо",
+      "shortname": "espresso",
+      "description": "100% Арабіка.",
+      "price": "40 грн"
+    },
+    {
+      "id": 303,
+      "name": "Зелений чай",
+      "shortname": "greentea",
+      "description": "Китайський високогірний.",
+      "price": "50 грн"
+    },
+    {
+      "id": 304,
+      "name": "Мохіто",
+      "shortname": "mojito",
+      "description": "Безалкогольний коктейль.",
+      "price": "90 грн"
+    }
+  ]
+}

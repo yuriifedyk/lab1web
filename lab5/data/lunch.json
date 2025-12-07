@@ -1,0 +1,36 @@
+{
+  "category": {
+    "name": "Бізнес-ланчі",
+    "notes": "Доступно з 12:00 до 15:00"
+  },
+  "items": [
+    {
+      "id": 101,
+      "name": "Суп дня",
+      "shortname": "soup",
+      "description": "Легкий овочевий суп.",
+      "price": "80 грн"
+    },
+    {
+      "id": 102,
+      "name": "Стейк з курки",
+      "shortname": "chicken",
+      "description": "Соковите філе з гарніром.",
+      "price": "150 грн"
+    },
+    {
+      "id": 103,
+      "name": "Салат Цезар",
+      "shortname": "caesar",
+      "description": "Класичний рецепт.",
+      "price": "120 грн"
+    },
+    {
+      "id": 104,
+      "name": "Паста Карбонара",
+      "shortname": "pasta",
+      "description": "Італійська паста з беконом.",
+      "price": "140 грн"
+    }
+  ]
+}
